@@ -16,12 +16,12 @@
 
 
 .site-header h1,
-.site-header nav{
+.site-header .nav{
     position: relative;
     z-index: 5;
 }
 
-header:after {
+.site-header:after {
     display: block;
     content: '';
     position: absolute;
@@ -38,7 +38,7 @@ header:after {
     color: rgb(216, 216, 216);
 }
 
-.site-header nav ul {
+.site-header .nav ul {
     display: flex;
     padding-top: 1em;
 }
@@ -46,7 +46,7 @@ header:after {
 .site-header nav ul li {
     padding: 0.5em 1em;
     list-style-type: none;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.8s ease-in;
     border-radius: 0.5em;
     opacity: 0;
 }
@@ -54,7 +54,7 @@ header:after {
 
 .site-header nav ul li:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
 }
 
 .site-header nav ul li a {
@@ -105,9 +105,6 @@ header:after {
     transform: translateX(0vw);
     opacity: 1;
 }
-
-
-
 
 
 

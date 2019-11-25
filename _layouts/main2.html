@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    <title>{{ site.title }}</title>
+    <script>
+        window.addEventListener('load', (event) => {
+        document.querySelector('body').classList.add('loaded');
+    
+        })
+    </script>
+</head>
+<body>
+    <div class="site">
+        <header class="second-header">
+            <h1><a href="{{ site.baseurl }}/">a</h1>
+            <nav class="second-nav">
+                <ul>
+                    {% for page in site.pages %}
+                    {% if page.title %}
+                    <li><a href="{{ site.baseurl }}/{{ page.url }}">{{ page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        
+        {{ content }}
+        
+    </div>
+</body>
+</html>
