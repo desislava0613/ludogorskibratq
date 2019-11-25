@@ -4,7 +4,7 @@
     align-items: flex-start;
     padding: 1em 2em;
     text-align: center;
-    background-image: url("/mclb2.jpg");
+    background-image: url("../images/mclb2.jpg");
     background-size: cover;
     background-position: center;
     min-height: 95vh;
