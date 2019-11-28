@@ -78,5 +78,48 @@ body {
 
 
 
+.about-image {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.about-image img {
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 5);
+}
+
+.members {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip img {
+    border-radius: 50%;
+    width: 150px;
+}
 
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-radius: 0.3em;
+    position: absolute;
+    z-index: 1;
+    padding: 1em;
+    margin: 0 auto;
+    top: 100%; 
+    left: 50%;
+    margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
