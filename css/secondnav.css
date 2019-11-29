@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Pacifico&display=swap');
+
 .second-header {
     display: flex;
     justify-content: space-between;
@@ -7,6 +9,23 @@
     box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.3);
 }
 
+.site .second-header h1 {
+    transform: translateX(-2em);
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.loaded .site .second-header h1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.site .second-header h1 a{
+    font-family: 'Caveat', cursive;
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    
+}
 .second-header .second-nav ul {
     display: flex;
     padding: 0.5em 1em;

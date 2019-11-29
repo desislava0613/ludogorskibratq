@@ -90,11 +90,22 @@ body {
 
 .about-image img {
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 5);
+    opacity: 0;
+    transition: opacity 1.5s ease-out 0.6s;
 }
 
-.members {
-    background-color: rgb(58, 51, 95);
+.loaded .about-image img {
+    opacity: 1;
 }
+
+.about-section .mcinfo {
+    max-width: 60em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+
+
 
 .members {
     display: flex;
@@ -102,6 +113,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    background-color: rgb(58, 51, 95);
+    box-shadow: 0 0 2em 0.5em rgba(0, 0, 0, 0.3);
 }
 
 
@@ -140,5 +153,30 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
+
+.upper-contacts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.upper-contacts .site-left {
+    align-items: center;
+}
+
+.upper-contacts .site-left ul li {
+    padding: 0.3em 0;
+    list-style-type: none;
+    
+}
+
+.site-contacts .map {
+    border: 2px solid white;
+    margin: 0 auto;
+}
+
+
 
 
