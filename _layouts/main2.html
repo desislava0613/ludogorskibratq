@@ -18,15 +18,8 @@
     <div class="site">
         <header class="second-header">
             <h1><a href="{{ site.baseurl }}/">МС Лудогорски братя</h1>
-            <nav class="second-nav">
-                <ul>
-                    {% for page in site.pages %}
-                    {% if page.title %}
-                    <li><a href="{{ site.baseurl }}/{{ page.url }}">{{ page.title }}</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
+                
+        {% include navigation.html %}
         </header>
         
         {{ content }}

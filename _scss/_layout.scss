@@ -80,7 +80,7 @@ body {
     border-radius: 0.3em;
 }
 
-
+/* about page */
 
 
 .about-image {
@@ -133,26 +133,34 @@ body {
     transition: 0.6s ease-out 0.2s;
 }
 
+
+
 .members .box img {
     border-radius: 50%;
     box-shadow: 0 0 2em 0.5em rgba(0, 0, 0, 0.3);
     width: 200px;
     transform: translateY(2em);
     transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
 
 .members .box:hover {
     box-shadow: 0 0 2em 0em rgba(0,0,0,0.5);
+    
 }
 
 .members .box:hover img {
     transform: translateY(0);
+   
 }
 
 .members .box:hover h3 {
     transform: translateY(0);
     opacity: 1;
+    
 }
+
+/* contacts page */
 
 .upper-contacts {
     display: flex;

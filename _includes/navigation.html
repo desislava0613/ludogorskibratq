@@ -1,0 +1,22 @@
+<nav class="second-nav">
+    <ul>
+        {% assign navigation_pages = site.pages | sort: "order" %}
+
+        {% for current_page in navigation_pages %}
+            {% if current_page.title %}
+            <li class="page-title-{{ current_page.title | slugify}}{% if current_page.url == page.url%} current-page {% endif%}">
+
+                <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
+            
+                {% if current_page.title == 'Галерия' %}
+                    <ul>
+                        <li><a href="#">Сезон 2019</a></li>
+                        <li><a href="#">Сезон 2018</a></li>
+                        <li><a href="#">Сезон 2017</a></li>
+                    </ul>
+                {% endif %}
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

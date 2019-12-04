@@ -3,7 +3,8 @@ title: Лудогорски братя
 email: des@example.com
 description: Hi there
 destination: docs
-baseurl: "/ludogorskibratq" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "/ludogorskibratq"#
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -20,6 +21,7 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
