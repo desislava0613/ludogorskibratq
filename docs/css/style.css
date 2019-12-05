@@ -225,6 +225,10 @@ body {
       transition: opacity 0.5s ease-in; }
     .site-header ul li:hover {
       background-color: rgba(255, 255, 255, 0.1); }
+      .site-header ul li:hover ul {
+        display: block; }
+    .site-header ul ul {
+      display: none; }
   .site-header a {
     margin: 0 0.2em;
     text-decoration: none;
@@ -378,7 +382,14 @@ body {
     opacity: 0;
     border-right: 1px solid white; }
   .second-nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.15); }
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center; }
+    .second-nav ul li:hover ul {
+      display: block;
+      padding: 0;
+      margin: 0; }
+  .second-nav ul ul {
+    display: none; }
   .second-nav ul a {
     text-decoration: none;
     color: #d8d8d8;
