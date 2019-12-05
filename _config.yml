@@ -3,7 +3,7 @@ title: Лудогорски братя
 email: des@example.com
 description: Hi there
 destination: docs
-baseurl: "/ludogorskibratq"
+baseurl: "/ludogorskibratq/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
